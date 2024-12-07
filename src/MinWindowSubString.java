@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class MinWindowSubString {
     int[] tOccMap = new int[256];
     int[] sOccMap = new int[256];
