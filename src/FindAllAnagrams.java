@@ -1,4 +1,7 @@
-class FinaAllAnagrams {
+import java.util.ArrayList;
+import java.util.List;
+
+class FindAllAnagrams {
     public List<Integer> findAnagrams(String s, String p) {
         List<Integer> anagrams = new ArrayList<>();
         if (p.length() > s.length()) return anagrams;
