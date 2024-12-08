@@ -3,18 +3,13 @@ import java.util.Map;
 
 public class TwoSums {
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> numberCounter = new HashMap<>();
+        Map<Integer, Integer> numToIndexMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
-            numberCounter.put(nums[i], numberCounter.getOrDefault(nums[i], 0) + 1);
+            numToIndexMap.put(nums[i], i);
         }
         for (int i = 0; i < nums.length; i++) {
-            numberCounter.put(nums[i], numberCounter.get(nums[i]) - 1);
-            if (numberCounter.containsKey(target - nums[i]) && numberCounter.get(target - nums[i]) > 0) {
-                for (int j = 0; j < nums.length; j++) {
-                    if (i != j && nums[j] == target - nums[i]) {
-                        return new int[]{i, j};
-                    }
-                }
+            if (numToIndexMap.containsKey(target - nums[i]) && numToIndexMap.get(target - nums[i]) != i ) {
+                return new int[]{i, numToIndexMap.get(target - nums[i])};
             }
         }
         return new int[]{};
