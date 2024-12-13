@@ -23,3 +23,13 @@ counter.put("dummy", counter.getOrDefault("dummy", 0) + 1) // can be useful when
 Map<String, List<Integer>> counter = new HashMap<>();
 counter.putIfAbsent("dummy", new ArrayList()); // only puts the key if it is not present
 ```
+- entrySet
+```
+HashMap<Integer, String> hm = new HashMap<>();
+hm.put(20, "Geeks");
+hm.put(15, "for");
+for (Map.Entry<Integer, Integer> entry : hm.entrySet()) {
+    System.out.println("Value: " + entry.getValue());
+    System.out.println("Key: " + entry.getKey());
+}
+```
