@@ -45,6 +45,24 @@
     - have a while loop which would check if the window outside of number of replacement allowed
     - check for the max lenght of each iteration
 - [Permutation in String](https://leetcode.com/problems/permutation-in-string/description/)
-    - 
+    - make window with 2 pointers with size of smaller string
+    - maintain a map for keeping occurrence for char in smaller string
+    - iterate through the string 
+    - compare the char occurrence of the sub string with smaller string map
+    - return the boolean result
+- [String Anagrams](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/):
+    - same as checking permutation but we will maintain the index if the condition is true
+- [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/): 
+    - same concept of having a 2 pointers
+    - we need to keep growing our window till the sub string found
+    - within each iteration check if the window is not statisfying condition of sub string
+    - for each main iteration maintain min window
+- [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/):
+    - same concept as permutation in string, instead of char we have words
+- [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/):
+    - 2 pointers
+    - start buy pointer at day 1 and sell pointer at day 2
+    - if price at buy pointer > price at sell pointer
+    - keep track of max profit in every iteration
 
 
