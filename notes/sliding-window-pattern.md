@@ -37,6 +37,7 @@
     - keep a variable which would basically have value of Max occured character in the window
     - loop through all the character within string and keep adding char occurrence to the map
     - have a while which would check if the current window is outside of the replacement allowed
+    - within while loop also update the max occurrence character as well
     - check for the max lenght of the window
 - [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/description/):
     - make window with 2 pointers
