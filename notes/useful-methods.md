@@ -4,6 +4,11 @@
 String s = "asdf";
 s.toCharArray() // will return array of all the characters
 ```
+- toLowerCase()
+```
+String s = "asdf";
+s.toLowerCase() // will return array of all the characters
+```
 
 # Arrays
 - sort
@@ -32,4 +37,11 @@ for (Map.Entry<Integer, Integer> entry : hm.entrySet()) {
     System.out.println("Value: " + entry.getValue());
     System.out.println("Key: " + entry.getKey());
 }
+```
+
+# Characters
+- isLetterOrDigit()
+```
+String s = "asdf"
+Character.isLetterOrDigit(s.charAt(0)); // returns boolean value
 ```
