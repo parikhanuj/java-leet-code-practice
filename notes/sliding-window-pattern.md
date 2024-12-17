@@ -55,9 +55,10 @@
     - same as checking permutation but we will maintain the index if the condition is true
 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/): 
     - same concept of having a 2 pointers
-    - we need to keep growing our window till the sub string found
-    - within each iteration check if the window is not statisfying condition of sub string
-    - for each main iteration maintain min window
+    - maintain 2 maps for both the strings
+    - iterate through the whole string and create a window which statisfies sub string condition
+    - have a while loop which would basically remove char from left and still statisfy sub string condition
+    - within while loop always check for result length and update the result if needed
 - [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/):
     - same concept as permutation in string, instead of char we have words
 - [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/):
