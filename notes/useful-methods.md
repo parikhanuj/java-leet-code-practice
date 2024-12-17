@@ -45,3 +45,14 @@ for (Map.Entry<Integer, Integer> entry : hm.entrySet()) {
 String s = "asdf"
 Character.isLetterOrDigit(s.charAt(0)); // returns boolean value
 ```
+
+# PriorityQueue
+- add(e)
+- peek() (retrieves the value at head, but does not remove it)
+- poll() (retrieves and remove value at the head)
+```
+PriorityQueue<Integer> p = new PriorityQueue<>();
+p.add(1);
+p.peek(); // 1
+p.poll(); // 1
+```
