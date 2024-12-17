@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 class LongestConsecutiveSeq {
     public int longestConsecutive(int[] nums) {
         Map<Integer, Boolean> presentAndConsiderMap = new HashMap<>();
