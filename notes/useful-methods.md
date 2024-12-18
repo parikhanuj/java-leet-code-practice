@@ -1,3 +1,9 @@
+# Integer
+- toString()
+- Integer.MAX_VALUE
+- Integer.MIN_VALUE
+- Integer.parseInt(<str>)
+
 # String
 - toCharArray()
 ```
