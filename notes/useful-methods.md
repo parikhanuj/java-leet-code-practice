@@ -56,3 +56,14 @@ p.add(1);
 p.peek(); // 1
 p.poll(); // 1
 ```
+
+# Stack
+- push(e)
+- peek() (retrieves the value at top of stack, but does not remove it)
+- pop() (retrieves and remove value at top of stack)
+```
+Stack<Integer> s = new Stack<>();
+p.add(1);
+p.peek(); // 1
+p.pop(); // 1
+```
