@@ -4,10 +4,14 @@ class BinarySearch {
         int right = nums.length - 1;
 
         while (left <= right) {
-            if (nums[left] == target) return left;
-            if (nums[right] == target) return right;
-            if (nums[right] - nums[left] > target) right--;
-            else left++;
+            int midPointer = (left + right) / 2;
+            int midNumber = nums[midPointer];
+            if (midNumber == target) return midPointer;
+            else if (midNumber <= target) {
+                left = midPointer + 1;
+            } else {
+                right = midPointer - 1;
+            }
         }
 
         return -1;

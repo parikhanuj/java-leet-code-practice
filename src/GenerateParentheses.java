@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+import java.util.stream.Collectors;
+
 public class GenerateParentheses {
     Stack<String> stack = new Stack<>();
     List<String> result = new ArrayList<>();
