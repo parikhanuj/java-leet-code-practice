@@ -22,6 +22,12 @@ s.toLowerCase() // will return array of all the characters
 int[] i = new int[]{4,2,1}
 Arrays.sort(i) // will sort the original array
 ```
+- creating array from provided range
+```
+int start = 1;
+int end = 13;
+int[] rangeArray = IntStream.rangeClosed(start, end).toArray();
+```
 
 # HashMap
 - getOrDefault
