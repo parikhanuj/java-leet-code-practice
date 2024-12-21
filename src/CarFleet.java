@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
 class CarFleet {
     public int carFleet(int target, int[] position, int[] speed) {
         Stack<Double> stack = new Stack<>();
