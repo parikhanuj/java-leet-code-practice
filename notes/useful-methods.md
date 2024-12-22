@@ -95,3 +95,14 @@ public ListNode reverseList(ListNode head) {
     return prev;
 }
 ```
+- mid node of LL
+```java
+ListNode slow = head;
+ListNode fast = head.next;
+
+// find mid of the linkedlist
+while (fast != null && fast.next != null) {
+    slow = slow.next;
+    fast = fast.next.next;
+}
+```
