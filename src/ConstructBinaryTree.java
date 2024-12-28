@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class ConstructBinaryTree {
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         List<Integer> preList = Arrays.stream(preorder).boxed().collect(Collectors.toList());
