@@ -28,6 +28,11 @@ int start = 1;
 int end = 13;
 int[] rangeArray = IntStream.rangeClosed(start, end).toArray();
 ```
+- converting int[] to List<Integer>
+```java
+int[] a = new int[]{1,2,3}
+List<Integer> aList = Arrays.stream(a).boxed().collect(Collectors.toList());
+```
 
 # HashMap
 - getOrDefault
