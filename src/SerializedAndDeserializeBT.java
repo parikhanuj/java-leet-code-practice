@@ -1,3 +1,6 @@
+import java.util.*;
+import java.util.stream.Collectors;
+
 public class SerializedAndDeserializeBT {
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
@@ -23,11 +26,10 @@ public class SerializedAndDeserializeBT {
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        if (data == "N") return null;
+        if (Objects.equals(data, "N")) return null;
         List<TreeNode> deserializedArray = Arrays
                 .stream(data.split(","))
-                .map(s -> s.equals("N") ? null : new TreeNode(Integer.parseInt(s)))
-                .collect(Collectors.toList());
+                .map(s -> s.equals("N") ? null : new TreeNode(Integer.parseInt(s))).toList();
         int index = 0;
         Queue<TreeNode> queue = new LinkedList<>();
         TreeNode root = deserializedArray.get(index++);

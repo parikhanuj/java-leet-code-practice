@@ -16,6 +16,21 @@ String s = "asdf";
 s.toLowerCase() // will return array of all the characters
 ```
 
+# Characters
+- isLetterOrDigit()
+```
+String s = "asdf"
+Character.isLetterOrDigit(s.charAt(0)); // returns boolean value
+```
+- custom function to identify if the character is alphanumeric
+```java
+public boolean alphaNum(char c) {
+    return (c >= 'A' && c <= 'Z' || 
+            c >= 'a' && c <= 'z' || 
+            c >= '0' && c <= '9');
+}
+```
+
 # Arrays
 - sort
 ```
@@ -55,15 +70,12 @@ for (Map.Entry<Integer, Integer> entry : hm.entrySet()) {
     System.out.println("Key: " + entry.getKey());
 }
 ```
-
-# Characters
-- isLetterOrDigit()
-```
-String s = "asdf"
-Character.isLetterOrDigit(s.charAt(0)); // returns boolean value
+- putting Map in DS like PriorityQueue or Stack
+```java
+PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
 ```
 
-# PriorityQueue
+# PriorityQueue - Max/Min Heap
 - add(e)
 - peek() (retrieves the value at head, but does not remove it)
 - poll() (retrieves and remove value at the head)
@@ -72,6 +84,10 @@ PriorityQueue<Integer> p = new PriorityQueue<>();
 p.add(1);
 p.peek(); // 1
 p.poll(); // 1
+```
+- priority queue as max heap
+```java
+PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
 ```
 
 # Stack
