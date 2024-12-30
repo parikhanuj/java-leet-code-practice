@@ -1,3 +1,8 @@
+# General
+- to divide a number with another number and get the ceil value
+  - like 7/2, we should get as 4 instead of 3
+  - we can do like `(numerator + denominator - 1)/2` like `(7 + 2 - 1)/2 = 4` 
+
 # Integer
 - toString()
 - Integer.MAX_VALUE
@@ -48,6 +53,20 @@ int[] rangeArray = IntStream.rangeClosed(start, end).toArray();
 int[] a = new int[]{1,2,3}
 List<Integer> aList = Arrays.stream(a).boxed().collect(Collectors.toList());
 ```
+- to find mid for binary search
+```java
+int mid = left + (right - left) / 2;
+```
+- within 2D matrix, to calculate row and column
+```java
+int ROWS = matrix.length, COLS = matrix[0].length;
+
+int l = 0, r = ROWS * COLS - 1;
+while (l <= r) {
+    int m = l + (r - l) / 2;
+    int row = m / COLS, col = m % COLS;
+}
+```
 
 # HashMap
 - getOrDefault
@@ -73,6 +92,20 @@ for (Map.Entry<Integer, Integer> entry : hm.entrySet()) {
 - putting Map in DS like PriorityQueue or Stack
 ```java
 PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
+```
+
+# TreeMap
+- The map is sorted according to the natural ordering of its keys, or by a Comparator provided at map creation time, depending on which constructor is used
+- This proves to be an efficient way of sorting and storing the key-value pairs
+- [Example usage](https://www.geeksforgeeks.org/treemap-in-java/#)
+- [Methods](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html)
+```java
+Map<String, Integer> treeMap = new TreeMap<>();
+
+// Adding elements to the tree map
+treeMap.put("A", 1); // O(log n)
+treeMap.put("C", 3); // O(log n)
+treeMap.put("B", 2); // O(log n)
 ```
 
 # PriorityQueue - Max/Min Heap
