@@ -21,3 +21,9 @@
 - `pop()` - pop from both the stacks
 - `top()` - peek from first stack
 - `getMin()` - peek from minStack stack
+
+## Time Based Key-Value Store
+- [Neetcode Example](https://neetcode.io/problems/time-based-key-value-store)
+- Create a store with Map DS like `private Map<String, TreeMap<Integer, String>> m`
+- `set()` - just insert into the Map and instantiate new TreeMap if the key is new
+- `get()` - normal retrieval from the map and use TreeMap's `floorEntry` function to get the nearest timestamp

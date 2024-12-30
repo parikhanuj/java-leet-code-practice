@@ -107,6 +107,10 @@ treeMap.put("A", 1); // O(log n)
 treeMap.put("C", 3); // O(log n)
 treeMap.put("B", 2); // O(log n)
 ```
+- floorEntry - Returns a key-value mapping associated with the greatest key less than or equal to the given key, or null if there is no such key.
+```java
+Map.Entry<Integer, String> entry = timestamps.floorEntry(timestamp);
+```
 
 # PriorityQueue - Max/Min Heap
 - add(e)
