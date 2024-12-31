@@ -1,4 +1,4 @@
-# Characters
+# Characters. 
 
 
 ## Printable ASCII characters
