@@ -27,3 +27,20 @@
 - Create a store with Map DS like `private Map<String, TreeMap<Integer, String>> m`
 - `set()` - just insert into the Map and instantiate new TreeMap if the key is new
 - `get()` - normal retrieval from the map and use TreeMap's `floorEntry` function to get the nearest timestamp
+
+## LRU cache implementation using LinkedList
+- [Neetcode Example](https://neetcode.io/problems/lru-cache)
+- Create a linkedlist double pointer class with next and prev pointers
+- Keep head and tail as 2 seperate node
+- Head side would always represent the node which are least recently used and can be removed if the size of the store increases the limit
+- Tail side represents newly added node or recently used node
+- Implementation
+  - have a `Map<Integer, DoubleLL>` type map for storing the values
+  - Always add a new node between head and tail, without replacing them
+  - Have an `add(node)` function which adds that node to the tail side of the linkedlist
+  - Have a `remove(node)` function which removes that node from linkedlist
+  - `get(int key)`: fetch the node from cache store (hashmap). Remove that node from the linkedlist and add that same node back, so it would be at the tail of the list.
+  - `put(int key, int value)`: check if the key is already present in the hashmap, if yes remove it. 
+    - Create new node with the key and value and `add` it to the list
+    - if capacity exceeds, remove from the head side
+
