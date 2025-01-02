@@ -1,4 +1,4 @@
-# General
+# General    
 - to divide a number with another number and get the ceil value
   - like 7/2, we should get as 4 instead of 3
   - we can do like `(numerator + denominator - 1)/2` like `(7 + 2 - 1)/2 = 4` 
