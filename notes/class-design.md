@@ -43,4 +43,14 @@
   - `put(int key, int value)`: check if the key is already present in the hashmap, if yes remove it. 
     - Create new node with the key and value and `add` it to the list
     - if capacity exceeds, remove from the head side
+  
+## Serialize and Deserialize Binary Tree
+- `serialize(TreeNode root)` 
+  - we would be using a StringBuilder to create a serialized string for binary tree
+  - for the null nodes, we would be using "N" instead of skipping them, so that when recreating binary tree, we would know which node is actually null
+  - do a level order traversal for the whole tree and keep "N" in the string for null nodes
+  - after every node, we would have "," as delimeter
+- `deserialized(String data)`
+  - create a array of TreeNode split by ","
+  - use a queue to do reverse level order traversal
 
