@@ -128,6 +128,10 @@ p.poll(); // 1
 ```java
 PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
 ```
+- priority queue as max heap for simple integers
+```java
+PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+```
 
 # Stack
 - push(e)
