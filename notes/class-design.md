@@ -45,6 +45,7 @@
     - if capacity exceeds, remove from the head side
   
 ## Serialize and Deserialize Binary Tree
+- [Neetcode Example](https://neetcode.io/problems/serialize-and-deserialize-binary-tree)
 - `serialize(TreeNode root)` 
   - we would be using a StringBuilder to create a serialized string for binary tree
   - for the null nodes, we would be using "N" instead of skipping them, so that when recreating binary tree, we would know which node is actually null
@@ -53,4 +54,16 @@
 - `deserialized(String data)`
   - create a array of TreeNode split by ","
   - use a queue to do reverse level order traversal
+
+## Median Finder for data stream
+- [Neetcode Example](https://neetcode.io/problems/find-median-in-a-data-stream)
+- we would be using 2 heaps. One min heap and one max heap
+- we would also keep a size variable to determine how many values have been inputed
+- `add(num)` 
+  - add the number first to maxHeap and check if the size of maxHeap exceeds the mid size of input data
+  - if thats the case, we would poll from maxHeap and offer it to minHeap
+  - we would also have while loop to make sure that all the numbers are in correct heaps
+- `findMedian`
+  - if the size of both the heaps are same, we would peeks both the heaps and divide it by 2
+  - otherwise the peek number in maxHeap is the median
 
