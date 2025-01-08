@@ -76,6 +76,11 @@ while (l <= r) {
 Map<String, Integer> counter = new HashMap<>();
 counter.put("dummy", counter.getOrDefault("dummy", 0) + 1) // can be useful when working with counter map
 ```
+- computeIfAbsent
+```
+Map<String, List<Integer>> counter = new HashMap<>();
+counter.computeIfAbsent("dummy", val -> new ArrayList()).add(1); // only puts the key if it is not present
+```
 - putIfAbsent
 ```
 Map<String, List<Integer>> counter = new HashMap<>();
