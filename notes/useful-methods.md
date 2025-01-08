@@ -91,6 +91,15 @@ for (Map.Entry<Integer, Integer> entry : hm.entrySet()) {
     System.out.println("Key: " + entry.getKey());
 }
 ```
+- keySet
+```
+HashMap<Integer, String> hm = new HashMap<>();
+hm.put(20, "Geeks");
+hm.put(15, "for");
+for (Integer key : hm.keySet()) {
+    System.out.println("Key: " + key);
+}
+```
 - putting Map in DS like PriorityQueue or Stack
 ```java
 PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) -> b.getValue() - a.getValue());
