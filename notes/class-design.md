@@ -67,3 +67,10 @@
   - if the size of both the heaps are same, we would peeks both the heaps and divide it by 2
   - otherwise the peek number in maxHeap is the median
 
+## Circular Queue
+- [Leetcode example](https://leetcode.com/problems/design-circular-queue/description/)
+- idea is to have 2 pointers. Head and tail.
+- also keep counter for current size within the queue
+- have isFull and isEmpty function based on the current size
+- change value for current size whenever enqueue or dequeue operation takes place
+- whenever doing an operation, check if the pointer is out of size, if thats the case reset the pointer value
