@@ -151,14 +151,14 @@ PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>(Collect
 - push(e)
 - peek() (retrieves the value at top of stack, but does not remove it)
 - pop() (retrieves and remove value at top of stack)
-```
-Stack<Integer> s = new Stack<>();
+
+- Stack<Integer> s = new Stack<>();
 p.add(1);
 p.peek(); // 1
 p.pop(); // 1
 ```
 
-#LinkedList Node
+# LinkedList Node
 - reverse LL
 ```java
 public ListNode reverseList(ListNode head) {
@@ -183,4 +183,29 @@ while (fast != null && fast.next != null) {
     slow = slow.next;
     fast = fast.next.next;
 }
+```
+
+# Deque
+- addFirst(E e): Adds an element to the head of the deque.
+- addLast(E e): Adds an element to the tail of the deque.
+- offerFirst(E e): Inserts an element at the head if possible, returning true if successful, false otherwise.
+- offerLast(E e): Inserts an element at the tail if possible, returning true if successful, false otherwise.
+- push(E e): Adds an element to the head of the deque (stack behavior).
+- removeFirst(): Removes and returns the first element from the deque. Throws an exception if the deque is empty.
+- removeLast(): Removes and returns the last element from the deque. Throws an exception if the deque is empty.
+- pollFirst(): Retrieves and removes the first element, returning null if the deque is empty.
+- pollLast(): Retrieves and removes the last element, returning null if the deque is empty.
+- pop(): Removes and returns the first element (stack behavior). Throws an exception if the deque is empty.****
+```java
+// Create a Deque of Strings
+Deque<String> d = new ArrayDeque<>();
+
+d.addFirst("1");
+d.addLast("2");
+
+String f = d.removeFirst();
+String l = d.removeLast();
+
+// Displaying the Deque
+System.out.println("First: " + f + ", Last: " + l);
 ```
