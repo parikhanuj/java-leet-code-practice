@@ -1,8 +1,5 @@
 # Backtracking
 
-
-
-
 ## Keys
 - Choices
 - Constraints
