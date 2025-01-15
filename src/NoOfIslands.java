@@ -3,6 +3,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+// BFS
 public class NoOfIslands {
     int ROWS;
     int COLUMNS;
@@ -41,6 +42,38 @@ public class NoOfIslands {
                     grid[nextRow][nextCol] = '0';
                     q.offer(new int[]{nextRow, nextCol});
                 }
+            }
+        }
+    }
+
+    // DFS
+    public int numIslandsDfs(char[][] grid) {
+        ROWS = grid.length;
+        COLUMNS = grid[0].length;
+        int numOfIslands = 0;
+        for (int i = 0; i < ROWS; i++) {
+            for (int j = 0; j < COLUMNS; j++) {
+                if (grid[i][j] == '1') {
+                    numOfIslands++;
+                    dfs(grid, i, j);
+                }
+            }
+        }
+        return numOfIslands;
+    }
+
+    private void dfs(char[][] grid, int r, int c) {
+        List<int[]> DIRECTIONS = Arrays.asList(
+                new int[] { 1, 0 },
+                new int[] { 0, 1 },
+                new int[] { -1, 0 },
+                new int[] { 0, -1 });
+        for (int[] direction : DIRECTIONS) {
+            int nextRow = r + direction[0];
+            int nextCol = c + direction[1];
+            if (nextRow < ROWS && nextRow >= 0 && nextCol < COLUMNS && nextCol >= 0 && grid[nextRow][nextCol] == '1') {
+                grid[nextRow][nextCol] = '0';
+                dfs(grid, nextRow, nextCol);
             }
         }
     }
