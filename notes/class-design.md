@@ -22,6 +22,8 @@
 - `top()` - peek from first stack
 - `getMin()` - peek from minStack stack
 
+## Queue (using 2 stacks)
+
 ## Time Based Key-Value Store
 - [Neetcode Example](https://neetcode.io/problems/time-based-key-value-store)
 - Create a store with Map DS like `private Map<String, TreeMap<Integer, String>> m`
