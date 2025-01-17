@@ -16,6 +16,11 @@
 ```
 String s = "asdf";
 s.toCharArray() // will return array of all the characters
+```java
+String str = "Hello, World!";
+char[] charArray = str.toCharArray();
+```
+
 ```
 - toLowerCase()
 ```
