@@ -6,3 +6,6 @@
 ## Find Itinerary
 - [LeetCode](https://leetcode.com/problems/reconstruct-itinerary/description/)
 
+## Topological Sort
+- [LeetCode](https://leetcode.com/problems/course-schedule/description/)
+
