@@ -75,7 +75,11 @@ while (l <= r) {
 }
 ```
 
+# HashSet
+- contains - checks if the object is already present in the Set
+
 # HashMap
+- containsKey - method to check if hashmap has the key
 - getOrDefault
 ```
 Map<String, Integer> counter = new HashMap<>();
