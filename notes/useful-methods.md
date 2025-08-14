@@ -138,7 +138,8 @@ Map.Entry<Integer, String> entry = timestamps.floorEntry(timestamp);
 ```
 
 # PriorityQueue - Max/Min Heap
-- add(e)
+- add(e) - adds element to the queue and returns true, but if the queue capacity is over it would throw exception
+- offer(e) - adds element to the queue and returns true, but if the queue capacity is over it would return false;
 - peek() (retrieves the value at head, but does not remove it)
 - poll() (retrieves and remove value at the head)
 ```
