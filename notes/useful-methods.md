@@ -74,6 +74,10 @@ while (l <= r) {
     int row = m / COLS, col = m % COLS;
 }
 ```
+- to add multiple elements within List
+```java
+List a = Arrays.asList(1,2,3);
+```
 
 # HashSet
 - contains - checks if the object is already present in the Set
