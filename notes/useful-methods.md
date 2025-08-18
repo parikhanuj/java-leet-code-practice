@@ -44,6 +44,20 @@ public boolean alphaNum(char c) {
 ```
 
 # Arrays
+- sub array from native array
+```java
+int[] a = new int[]{1,2,3,4,5};
+int start = 2; // inclusive
+int end = 5; // exclusive
+int[] b = Arrays.stream(a).copyOfRange(a, start, end);
+// b = {3, 4}
+```
+- max from array
+```java
+int[] a = new int[]{1,3,4,5,3};
+int max = Arrays.stream(a).max().getAsInt();
+// max = 5;
+```
 - sort
 ```
 int[] i = new int[]{4,2,1}
