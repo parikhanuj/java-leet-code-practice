@@ -179,7 +179,7 @@ PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>(Collect
 - push(e)
 - peek() (retrieves the value at top of stack, but does not remove it)
 - pop() (retrieves and remove value at top of stack)
-
+```java
 - Stack<Integer> s = new Stack<>();
 p.add(1);
 p.peek(); // 1
