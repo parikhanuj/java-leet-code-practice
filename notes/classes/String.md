@@ -1,0 +1,23 @@
+# String class
+- Get length of string: `str.length();`
+- Convert to uppercase: `str.toUpperCase();`
+- Convert to lowercase: `str.toLowerCase();`
+- Check if string equals another string: `str.equals(anotherStr);`
+- Check if string equals another string ignoring case: `str.equalsIgnoreCase(anotherStr);`
+- Check if string starts with a prefix: `str.startsWith(prefix);`
+- Check if string ends with a suffix: `str.endsWith(suffix);`
+- Get character at index: `str.charAt(index);`
+- Find index of a character or substring: `str.indexOf('a');`, `str.indexOf("abc");`
+- Find last index of a character or substring: `str.lastIndexOf('a');`, `str.lastIndexOf("abc");`
+- Extract substring: `str.substring(startIndex);`, `str.substring(startIndex, endIndex);`
+- Replace characters or substring: `str.replace('a', 'b');`, `str.replace("old", "new");`
+- Trim leading and trailing spaces: `str.trim();`
+- Split string by delimiter: `str.split(",");`
+- Check if string contains substring: `str.contains("abc");`
+- Check if string is empty: `str.isEmpty();`
+- Convert string to character array: `str.toCharArray();`
+- Convert character array to String: `new String(charArrayVariable)`
+- Convert string to `StringBuilder`: `new StringBuilder(str);`
+- Convert string to bytes: `str.getBytes();`
+- Compare strings lexicographically: `str.compareTo(anotherStr);`, `str.compareToIgnoreCase(anotherStr);`
+- Join array or list of strings: `String.join(",", listOfStrings);`
